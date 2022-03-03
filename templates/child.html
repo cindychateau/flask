@@ -1,0 +1,9 @@
+{% extends "base.html"%}
+{%block head%}
+    {{super()}}
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style2.css')}}">
+{% endblock %}
+{% block title %}CHILD{% endblock %}
+{% block body %}
+    <h2>Este es el child</h2>
+{% endblock%}
